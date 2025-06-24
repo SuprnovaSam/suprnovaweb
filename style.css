@@ -1,0 +1,389 @@
+/* Import sport-themed fonts - choose one of these options */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap'); /* Futuristic/tech sports */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap'); /* Modern sports */
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&display=swap'); /* Athletic/dynamic */
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300;400;500;600;700&display=swap'); /* Sports jersey style */
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  /* Choose one of these font options: */
+  font-family: 'exo 2O', sans-serif; /* Modern, clean sports look */
+  /* font-family: 'Orbitron', sans-serif; */ /* Futuristic, tech-forward */
+  /* font-family: 'Exo 2', sans-serif; */ /* Athletic, dynamic */
+  /* font-family: 'Saira Condensed', sans-serif; */ /* Sports jersey style */
+}
+
+body {
+  position: relative; /* Required for the pseudo-element to position correctly */
+}
+
+body:before {
+  content: ''; /* Creates an empty pseudo-element */
+  position: fixed; /* Keeps it fixed in the background */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('soccerfeild.jpg'); /* Update with the correct background image */
+  background-size: cover; /* Adjust as necessary */
+  filter: opacity(0.5); /* Dull the background */
+  z-index: -1; /* Places it behind other content */
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Makes the navbar full width */
+  background-color: rgb(255, 255, 255);
+  padding: 1rem;
+  z-index: 1000;
+  display: flex;
+  justify-content: center; /* Centers the header container */
+}
+
+.header-container {
+  display: flex;
+  align-items: center; /* Aligns items vertically */
+  gap: 1rem; /* Space between menu and title */
+  max-width: 1200px; /* Optional: limit max width */
+  width: 100%;
+  justify-content: center; /* Center the header content */
+  position: relative; /* For absolute positioning of menu */
+}
+
+.nav-menu {
+  position: absolute;
+  left: 0; /* Position menu on the left */
+}
+
+.header-titles {
+  display: flex;
+  align-items: center; /* Align logo and titles vertically */
+}
+
+.titles {
+  display: flex;
+  flex-direction: column; /* Stack title and subtitle vertically */
+  margin-left: 1rem; /* Space between logo and titles */
+}
+
+.main-title {
+  display: flex;
+  align-items: center; /* Keep Supr and Nova side by side */
+}
+
+.logo {
+  width: 70px; /* Slightly smaller logo */
+  margin-right: 10px; /* Space between logo and titles */
+}
+
+.title {
+  font-size: 2rem; /* Reduced font size */
+  color: #6a1b9a;
+  margin: 0;
+  display: inline;
+}
+
+.title2 {
+  font-size: 2rem; /* Reduced font size */
+  color: #002e7a;
+  margin: 0;
+  display: inline;
+}
+
+.subtitle {
+  font-size: 1rem; /* Smaller subtitle */
+  color: #3e2723;
+  margin: 0;
+  margin-top: 0.2rem; /* Small space between title and subtitle */
+}
+
+main {
+  min-height: calc(100vh - 60px); /* Account for the navbar height */
+  padding: 6rem 2rem 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Aligns child elements to the left */
+  text-align: left; /* Change text alignment to left */
+  margin-top: 60px; /* Adds space at the top equal to navbar height */
+}
+
+/* Remaining styles unchanged... */
+
+/* Remaining styles unchanged... */
+.titles {
+  display: flex;
+  align-items: center; /* Aligns logo and titles vertically */
+}
+
+.logo {
+  width: 90px; /* Adjust size as needed */
+  margin-right: 0px; /* Space between logo and titles */
+}
+
+.title {
+  font-size: 4rem;
+  color: #6a1b9a;
+  margin: 0;
+}
+
+.title2 {
+  font-size: 4rem;
+  color: #002e7a;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 2rem;
+  color: #3e2723;
+}
+
+.description p {
+  font-size: 1.5rem;
+}
+
+.registration-form {
+  max-width: 95%;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.form-embed {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+}
+
+.form-note {
+  font-size: 0.9rem;
+  color: #666;
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+.page-title {
+  margin-bottom: 1rem;
+  margin-top: 0;
+  text-align: center;
+}
+
+.page-title h1 {
+  font-size: 2.5rem;
+  color: #6a1b9a;
+  margin: 0;
+}
+
+.about-content {
+  max-width: 800px;
+  margin-top: 2rem;
+}
+
+.about-content h2 {
+  color: #6a1b9a;
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-content ul {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.about-content li {
+  margin-bottom: 0.5rem;
+}
+
+.about-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.equipment-images {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem 0;
+  justify-content: space-between;
+}
+
+.equipment-item {
+  flex: 1;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.equipment-img {
+  width: 100%;
+  max-width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.equipment-item h3 {
+  color: #6a1b9a;
+  margin: 1rem 0 0.5rem 0;
+  font-size: 1.3rem;
+}
+
+.equipment-item p {
+  font-size: 1rem;
+  margin: 0;
+  color: #555;
+}
+
+/* Mobile responsiveness for equipment images */
+@media (max-width: 768px) {
+  .equipment-images {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .equipment-img {
+    max-width: 200px;
+    height: 150px;
+  }
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-btn {
+  background-color: #6a1b9a;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.dropdown-btn:hover {
+  background-color: #002e7a;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content .nav-link {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+.dropdown-content .nav-link:hover {
+  background-color: #f1f1f1;
+}
+
+.contact-content {
+  max-width: 1000px;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+}
+
+.contact-info {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+}
+
+.contact-item {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-left: 4px solid #6a1b9a;
+  background-color: rgba(248, 255, 241, 0.5);
+  border-radius: 5px;
+}
+
+.contact-item h3 {
+  color: #6a1b9a;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.3rem;
+}
+
+.contact-item p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.contact-item a {
+  color: #002e7a;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+.survey-section {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.survey-section h2 {
+  color: #6a1b9a;
+  margin-top: 0;
+}
+
+.survey-embed {
+  margin-top: 1.5rem;
+}
+
+.survey-note {
+  font-size: 0.9rem;
+  color: #666;
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+/* Mobile responsiveness for contact page */
+@media (max-width: 768px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .contact-info,
+  .survey-section {
+    padding: 1.5rem;
+  }
+  
+  .survey-embed iframe {
+    height: 500px;
+  }
+}
+
+/* Remaining styles unchanged... */
