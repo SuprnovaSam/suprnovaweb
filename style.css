@@ -1,18 +1,11 @@
-/* Import sport-themed fonts - choose one of these options */
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap'); /* Futuristic/tech sports */
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap'); /* Modern sports */
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&display=swap'); /* Athletic/dynamic */
-@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300;400;500;600;700&display=swap'); /* Sports jersey style */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sauce+One:wght@400&display=swap');
 
 html,
 body {
   padding: 0;
   margin: 0;
   /* Choose one of these font options: */
-  font-family: 'exo 2O', sans-serif; /* Modern, clean sports look */
-  /* font-family: 'Orbitron', sans-serif; */ /* Futuristic, tech-forward */
-  /* font-family: 'Exo 2', sans-serif; */ /* Athletic, dynamic */
-  /* font-family: 'Saira Condensed', sans-serif; */ /* Sports jersey style */
+  font-family: 'Open Sauce One', sans-serif; /* Modern, clean sports look */
 }
 
 body {
@@ -82,14 +75,14 @@ body:before {
 
 .title {
   font-size: 2rem; /* Reduced font size */
-  color: #6a1b9a;
+  color: #9721ff;
   margin: 0;
   display: inline;
 }
 
 .title2 {
   font-size: 2rem; /* Reduced font size */
-  color: #002e7a;
+  color: #221769;
   margin: 0;
   display: inline;
 }
@@ -126,13 +119,13 @@ main {
 
 .title {
   font-size: 4rem;
-  color: #6a1b9a;
+  color: #9721ff;
   margin: 0;
 }
 
 .title2 {
   font-size: 4rem;
-  color: #002e7a;
+  color: #221769;
   margin: 0;
 }
 
@@ -174,7 +167,7 @@ main {
 
 .page-title h1 {
   font-size: 2.5rem;
-  color: #6a1b9a;
+  color: #9721ff;
   margin: 0;
 }
 
@@ -184,7 +177,7 @@ main {
 }
 
 .about-content h2 {
-  color: #6a1b9a;
+  color: #9721ff;
   font-size: 1.8rem;
   margin-top: 2rem;
   margin-bottom: 1rem;
@@ -230,7 +223,7 @@ main {
 }
 
 .equipment-item h3 {
-  color: #6a1b9a;
+  color: #9721ff;
   margin: 1rem 0 0.5rem 0;
   font-size: 1.3rem;
 }
@@ -240,7 +233,80 @@ main {
   margin: 0;
   color: #555;
 }
+/* Mobile responsiveness for header and navigation */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.5rem;
+  }
+  
+  .header-container {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .nav-menu {
+    position: static;
+    align-self: flex-start;
+  }
+  
+  .header-titles {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .titles {
+    margin-left: 0;
+    align-items: center;
+  }
+  
+  .main-title {
+    justify-content: center;
+  }
+  
+  .logo {
+    width: 50px;
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+  
+  .title, .title2 {
+    font-size: 1.8rem;
+  }
+  
+  .subtitle {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
+  .dropdown-btn {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+  
+  .dropdown-content {
+    min-width: 120px;
+  }
+  
+  .dropdown-content .nav-link {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+  
+  main {
+    padding: 4rem 1rem 2rem 1rem;
+    margin-top: 80px; /* Adjust for taller mobile header */
+  }
+  
+  .page-title h1 {
+    font-size: 2rem;
+  }
+  
+  .description p {
+    font-size: 1.2rem;
+  }
+}
 
+/* Mobile responsiveness for equipment images */
 /* Mobile responsiveness for equipment images */
 @media (max-width: 768px) {
   .equipment-images {
@@ -260,7 +326,7 @@ main {
 }
 
 .dropdown-btn {
-  background-color: #6a1b9a;
+  background-color: #9721ff;
   color: white;
   padding: 12px 20px;
   font-size: 16px;
@@ -271,7 +337,7 @@ main {
 }
 
 .dropdown-btn:hover {
-  background-color: #002e7a;
+  background-color: #221769;
 }
 
 .dropdown-content {
@@ -320,13 +386,13 @@ main {
 .contact-item {
   margin-bottom: 2rem;
   padding: 1rem;
-  border-left: 4px solid #6a1b9a;
+  border-left: 4px solid #9721ff;
   background-color: rgba(248, 255, 241, 0.5);
   border-radius: 5px;
 }
 
 .contact-item h3 {
-  color: #6a1b9a;
+  color: #9721ff;
   margin: 0 0 0.5rem 0;
   font-size: 1.3rem;
 }
@@ -337,7 +403,7 @@ main {
 }
 
 .contact-item a {
-  color: #002e7a;
+  color: #221769;
   text-decoration: none;
   font-weight: 500;
 }
@@ -354,7 +420,7 @@ main {
 }
 
 .survey-section h2 {
-  color: #6a1b9a;
+  color: #9721ff;
   margin-top: 0;
 }
 
